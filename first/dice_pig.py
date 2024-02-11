@@ -25,7 +25,6 @@ while True:
 max_score = 3
 player_scores = [0 for _ in range(players)]
 
-
 while max(player_scores) < max_score:
     for player_index in range(players):
         print("\nplayer ", player_index ," trun started\n" )
@@ -47,5 +46,8 @@ while max(player_scores) < max_score:
 
 
 print(player_scores)
+max_score = max(player_scores)
+
+winner = player_scores.index(max_score)
 
    
